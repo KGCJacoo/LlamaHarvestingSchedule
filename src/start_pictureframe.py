@@ -16,6 +16,6 @@ def startCache():
 def startPygame():
 	pass
 
-t1 = threading.Thread(target=someFunc)
+t1 = Thread(target=someFunc)
 t1.start()
 t1.join()

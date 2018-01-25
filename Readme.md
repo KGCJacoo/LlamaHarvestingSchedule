@@ -24,13 +24,13 @@
 ## IRL to Device
 We talked about having 4 buttons on the pictureframe, as well as the sensor.  I'm inclined to copy known configurations from things like monitors, ie Menu, Enter, Up, Down, Left, Right. A rough initial outline:
 
-* Menu/Enter - Enters the menu, navigable via the arrow keys.  "Enter" moves forward and selects things, "Menu" opens the menu, and once the menu is open, acts like a "back" key.
-* Arrows
+1. Menu/Enter - Enters the menu, navigable via the arrow keys.  "Enter" moves forward and selects things, "Menu" opens the menu, and once the menu is open, acts like a "back" key.
+1. Arrows
  * Up - Tap for "upvote", AKA increasing the probability of the current picture to be shown.  Double-tap to decrease time between photos.
  * Down - Tap for "downvote" the inverse of above.
  * Left - Tap for the previous photo.
  * Right - Tap for the next photo.
-* PIR sensor - When humans are detected, activate the screen and begin displaying/rotating pictures.  The time for this ought be configurable via the web GUI.
+1. PIR sensor - When humans are detected, activate the screen and begin displaying/rotating pictures.  The time for this ought be configurable via the web GUI.
 
 ## Image Modules to Display/Cache service
 Here I'm trying to define how Daudi's and TK's code will interact.  Generally, config information is stored with the webgui code, but it can flow bidirectionally.  For example the gui can decide an initial picture delay time, but the user can override this via the hardware buttons on the pictureframe.
